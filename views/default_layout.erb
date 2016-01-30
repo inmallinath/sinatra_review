@@ -1,4 +1,6 @@
 <!DOCTYPE html>
 <nav><a href="/">Home</a> | <a href="/new">Add Song</a></nav>
-
+<% if session %>
+  <p> <%= session.inspect %></p>
+<%end%>
 <%= yield%>
