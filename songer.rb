@@ -2,9 +2,9 @@ require "sinatra"
 require "sinatra/reloader"
 
 get "/" do
-  "<h1>Hello World!</h1>"
+  erb :index, layout: :default_layout
 end
 
-get "/songs" do
-
+get "/new" do
+  erb :add_song, layout: :default_layout
 end
